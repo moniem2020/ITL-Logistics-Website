@@ -55,8 +55,10 @@ export default function AboutPage() {
                         <div className="mv-card">
                             <div className="mv-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                    {/* Target icon for Mission */}
                                     <circle cx="12" cy="12" r="10" />
-                                    <path d="M12 16v-4M12 8h.01" />
+                                    <circle cx="12" cy="12" r="6" />
+                                    <circle cx="12" cy="12" r="2" />
                                 </svg>
                             </div>
                             <h3>Our Mission</h3>
@@ -69,8 +71,9 @@ export default function AboutPage() {
                         <div className="mv-card">
                             <div className="mv-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                                    <circle cx="12" cy="12" r="3" />
+                                    {/* Compass icon for Vision */}
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
                                 </svg>
                             </div>
                             <h3>Our Vision</h3>
@@ -127,8 +130,9 @@ export default function AboutPage() {
                                 <div className="advantage-item">
                                     <div className="advantage-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                            {/* Globe for Global Network */}
                                             <circle cx="12" cy="12" r="10" />
-                                            <path d="M2 12h20" />
+                                            <line x1="2" y1="12" x2="22" y2="12" />
                                             <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
                                         </svg>
                                     </div>
@@ -140,8 +144,10 @@ export default function AboutPage() {
                                 <div className="advantage-item">
                                     <div className="advantage-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                                            {/* Package Stack for Track Record */}
+                                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                            <line x1="12" y1="22.08" x2="12" y2="12" />
                                         </svg>
                                     </div>
                                     <div className="advantage-text">

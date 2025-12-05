@@ -29,9 +29,12 @@ export default function IndustriesPage() {
                         <div className="industry-detail-content">
                             <div className="industry-icon-large">
                                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <rect x="8" y="20" width="32" height="16" rx="4" />
-                                    <circle cx="16" cy="40" r="4" />
-                                    <circle cx="32" cy="40" r="4" />
+                                    {/* Car Icon for Automotive */}
+                                    <path d="M8 28l4-8h24l4 8v8H8v-8z" />
+                                    <circle cx="16" cy="36" r="3" />
+                                    <circle cx="32" cy="36" r="3" />
+                                    <line x1="16" y1="20" x2="18" y2="20" />
+                                    <line x1="30" y1="20" x2="32" y2="20" />
                                 </svg>
                             </div>
                             <h2>Automotive Industry</h2>
@@ -65,8 +68,14 @@ export default function IndustriesPage() {
                         <div className="industry-detail-content">
                             <div className="industry-icon-large">
                                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <rect x="8" y="8" width="32" height="24" rx="2" />
-                                    <rect x="16" y="32" width="16" height="8" />
+                                    {/* Microchip Icon for High-Tech */}
+                                    <rect x="14" y="14" width="20" height="20" rx="2" />
+                                    <line x1="10" y1="18" x2="14" y2="18" />
+                                    <line x1="10" y1="24" x2="14" y2="24" />
+                                    <line x1="10" y1="30" x2="14" y2="30" />
+                                    <line x1="34" y1="18" x2="38" y2="18" />
+                                    <line x1="34" y1="24" x2="38" y2="24" />
+                                    <line x1="34" y1="30" x2="38" y2="30" />
                                 </svg>
                             </div>
                             <h2>High-Tech & Electronics</h2>
@@ -100,7 +109,11 @@ export default function IndustriesPage() {
                         <div className="industry-detail-content">
                             <div className="industry-icon-large">
                                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M12 40V8l12 8 12-8v32l-12-8-12 8z" />
+                                    {/* Shopping Bag Icon for Retail */}
+                                    <path d="M8 16h32l2 24H6l2-24z" />
+                                    <path d="M16 16v-4a8 8 0 0116 0v4" />
+                                    <line x1="16" y1="24" x2="16" y2="24" />
+                                    <line x1="32" y1="24" x2="32" y2="24" />
                                 </svg>
                             </div>
                             <h2>Retail & E-Commerce</h2>
@@ -134,7 +147,10 @@ export default function IndustriesPage() {
                         <div className="industry-detail-content">
                             <div className="industry-icon-large">
                                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M24 8v32M16 16l8-8 8 8M8 28h32" />
+                                    {/* Medical Cross Icon for Pharma */}
+                                    <path d="M24 8v32M12 20h24M12 28h24" />
+                                    <rect x="20" y="12" width="8" height="24" rx="1" />
+                                    <rect x="14" y="18" width="20" height="12" rx="1" />
                                 </svg>
                             </div>
                             <h2>Pharma & Healthcare</h2>
