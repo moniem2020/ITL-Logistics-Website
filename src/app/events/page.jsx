@@ -7,25 +7,147 @@ export const metadata = {
 
 export default function EventsPage() {
     const exhibitions = [
+        // Featured International Exhibitions
         {
             name: 'Gulfood',
             years: '2023 - 2024',
             location: 'Dubai, UAE',
-            description: 'The world\'s largest annual food & beverage trade show. We provide comprehensive logistics for exhibitors bringing food products and equipment.',
+            description: 'The world\'s largest annual food & beverage trade show.',
             featured: true
         },
         {
             name: 'Arab Health',
             years: '2023 - 2024',
             location: 'Dubai, UAE',
-            description: 'The leading healthcare exhibition in the Middle East. We handle sensitive medical equipment and pharmaceutical displays.',
+            description: 'The leading healthcare exhibition in the Middle East.',
             featured: true
         },
         {
             name: 'Beauty Eurasia',
             years: '2024',
             location: 'Istanbul, Turkey',
-            description: 'Turkey\'s largest beauty and cosmetics trade fair. We specialize in fragile beauty product handling and display logistics.',
+            description: 'Turkey\'s largest beauty and cosmetics trade fair.',
+            featured: true
+        },
+        // Additional International Exhibitions
+        {
+            name: 'ATAYA',
+            years: '2024',
+            location: 'Abu Dhabi, UAE',
+            description: 'Premier hospitality and catering industry exhibition.',
+            featured: false
+        },
+        {
+            name: 'SAUDI FOOD MANUFACTURING',
+            years: '2024',
+            location: 'Riyadh, KSA',
+            description: 'Leading food manufacturing and processing exhibition.',
+            featured: false
+        },
+        {
+            name: 'Beauty West Africa Cosmetics',
+            years: '2023',
+            location: 'Lagos, Nigeria',
+            description: 'West Africa\'s largest beauty and cosmetics trade show.',
+            featured: false
+        },
+        {
+            name: 'Zuchex',
+            years: '2023',
+            location: 'Istanbul, Turkey',
+            description: 'Toy and baby products exhibition.',
+            featured: false
+        },
+        {
+            name: 'Warsaw Home',
+            years: '2023',
+            location: 'Warsaw, Poland',
+            description: 'Home decor and furniture trade fair.',
+            featured: false
+        },
+        {
+            name: 'FOOD AFRICA',
+            years: '2023',
+            location: 'Dubai, UAE',
+            description: 'Africa\'s leading food and beverage exhibition.',
+            featured: false
+        },
+        {
+            name: 'Enlit Africa',
+            years: '2023',
+            location: 'Cape Town, South Africa',
+            description: 'Energy and utilities exhibition for Africa.',
+            featured: false
+        },
+        {
+            name: 'Interpack',
+            years: '2023',
+            location: 'Düsseldorf, Germany',
+            description: 'World\'s leading packaging and processing trade fair.',
+            featured: false
+        },
+        {
+            name: 'Wetex',
+            years: '2018 - 2021',
+            location: 'Dubai, UAE',
+            description: 'Water, Energy, Technology and Environment Exhibition.',
+            featured: false
+        },
+        // Worldwide Exhibitions
+        {
+            name: 'Transport Logistic Munich',
+            years: '2023',
+            location: 'Munich, Germany',
+            description: 'International exhibition for logistics and supply chain.',
+            featured: false
+        },
+        {
+            name: 'Hanover Industrial',
+            years: '2023',
+            location: 'Hanover, Germany',
+            description: 'Industrial technology exhibition.',
+            featured: false
+        },
+        {
+            name: 'IHS Chicago',
+            years: '2020',
+            location: 'Chicago, USA',
+            description: 'International Home + Housewares Show.',
+            featured: false
+        },
+        {
+            name: 'Eletrolar Show',
+            years: '2022',
+            location: 'São Paulo, Brazil',
+            description: 'Latin American electronics and home appliances.',
+            featured: false
+        },
+        {
+            name: 'Messe Frankfurt',
+            years: '2023',
+            location: 'Frankfurt, Germany',
+            description: 'Various trade fairs at Europe\'s largest exhibition center.',
+            featured: false
+        },
+        {
+            name: 'Big 5 Kenya',
+            years: '2023',
+            location: 'Nairobi, Kenya',
+            description: 'East Africa\'s leading construction industry event.',
+            featured: false
+        },
+        {
+            name: 'Canton Fair',
+            years: '2023',
+            location: 'Guangzhou, China',
+            description: 'China\'s largest import and export trade fair.',
+            featured: false
+        },
+        {
+            name: 'HATS',
+            years: '2021 - 2022',
+            location: 'Cairo, Egypt',
+            description: 'Home appliances and technology show.',
             featured: false
         }
     ]
