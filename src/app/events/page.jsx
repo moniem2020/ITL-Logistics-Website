@@ -278,6 +278,69 @@ export default function EventsPage() {
                 </div>
             </section>
 
+            {/* Events Gallery */}
+            <section className="events-gallery">
+                <div className="container">
+                    <div className="section-header center">
+                        <span className="section-tag">Our Gallery</span>
+                        <h2 className="section-title">Exhibition Highlights</h2>
+                        <p className="section-subtitle">
+                            Showcasing our successful logistics operations at major international exhibitions
+                        </p>
+                    </div>
+
+                    <div className="gallery-grid">
+                        <div className="gallery-item">
+                            <img src="/gulfood.png" alt="Gulfood Dubai Exhibition" />
+                            <div className="gallery-overlay">
+                                <h4>Gulfood Dubai</h4>
+                                <p>World's largest food & beverage trade show</p>
+                            </div>
+                        </div>
+
+                        <div className="gallery-item">
+                            <img src="/arab-health.png" alt="Arab Health Exhibition" />
+                            <div className="gallery-overlay">
+                                <h4>Arab Health</h4>
+                                <p>Leading healthcare exhibition</p>
+                            </div>
+                        </div>
+
+                        <div className="gallery-item">
+                            <img src="/beauty-eurasia.png" alt="Beauty Eurasia Exhibition" />
+                            <div className="gallery-overlay">
+                                <h4>Beauty Eurasia</h4>
+                                <p>Turkey's largest beauty trade fair</p>
+                            </div>
+                        </div>
+
+                        <div className="gallery-item">
+                            <img src="/warehouse.png" alt="Modern Logistics Warehouse" />
+                            <div className="gallery-overlay">
+                                <h4>Warehouse Operations</h4>
+                                <p>State-of-the-art storage facilities</p>
+                            </div>
+                        </div>
+
+                        <div className="gallery-item">
+                            <img src="/cargo-ship.png" alt="Ocean Freight Shipping" />
+                            <div className="gallery-overlay">
+                                <h4>Ocean Freight</h4>
+                                <p>International cargo shipping</p>
+                            </div>
+                        </div>
+
+                        <div className="gallery-item">
+                            <img src="/air-freight.png" alt="Air Freight Cargo" />
+                            <div className="gallery-overlay">
+                                <h4>Air Freight</h4>
+                                <p>Express cargo solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* CTA */}
             <section className="cta">
                 <div className="container">
