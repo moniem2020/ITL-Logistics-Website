@@ -2811,3 +2811,8 @@ input, textarea, select {
     font-size: var(--font-size-sm);
     color: var(--color-gray-300);
 }
+
+/* Fix exhibition badge positioning */
+.exhibition-header {
+    padding-top: var(--spacing-6);
+}

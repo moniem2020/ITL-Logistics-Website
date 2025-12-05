@@ -71,10 +71,14 @@ export default function HomePage() {
                             <span className="service-badge">Most Popular</span>
                             <div className="service-icon">
                                 <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M8 40h48l-8-16H16l-8 16z" />
-                                    <path d="M12 40v8h40v-8" />
-                                    <circle cx="20" cy="52" r="4" />
-                                    <circle cx="44" cy="52" r="4" />
+                                    {/* Cargo Ship Icon */}
+                                    <path d="M8 36h48v8l-4 4H12l-4-4v-8z" />
+                                    <rect x="16" y="20" width="32" height="16" />
+                                    <rect x="20" y="12" width="24" height="8" />
+                                    <path d="M28 12V8h8v4" />
+                                    <circle cx="16" cy="50" r="2" />
+                                    <circle cx="32" cy="50" r="2" />
+                                    <circle cx="48" cy="50" r="2" />
                                 </svg>
                             </div>
                             <h3 className="service-title">Ocean Freight</h3>
@@ -99,9 +103,13 @@ export default function HomePage() {
                         <div className="service-card">
                             <div className="service-icon">
                                 <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M32 8l24 20-24 4-24-4 24-20z" />
-                                    <path d="M32 32v24" />
-                                    <path d="M24 40l8 16 8-16" />
+                                    {/* Cargo Airplane Icon */}
+                                    <path d="M32 16L8 32h48L32 16z" />
+                                    <path d="M32 32v16" />
+                                    <path d="M20 36l12 12 12-12" />
+                                    <line x1="16" y1="32" x2="16" y2="40" />
+                                    <line x1="48" y1="32" x2="48" y2="40" />
+                                    <rect x="28" y="8" width="8" height="8" />
                                 </svg>
                             </div>
                             <h3 className="service-title">Air Freight</h3>
@@ -126,10 +134,13 @@ export default function HomePage() {
                         <div className="service-card">
                             <div className="service-icon">
                                 <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <rect x="8" y="24" width="40" height="20" rx="2" />
-                                    <circle cx="16" cy="48" r="4" />
-                                    <circle cx="40" cy="48" r="4" />
-                                    <path d="M48 32h8l4 8v4h-12" />
+                                    {/* Delivery Truck Icon */}
+                                    <rect x="8" y="24" width="32" height="16" rx="2" />
+                                    <path d="M40 32h12l6 8v8H40" />
+                                    <circle cx="18" cy="52" r="4" />
+                                    <circle cx="46" cy="52" r="4" />
+                                    <line x1="14" y1="28" x2="34" y2="28" />
+                                    <line x1="14" y1="32" x2="28" y2="32" />
                                 </svg>
                             </div>
                             <h3 className="service-title">Inland Transport</h3>
@@ -168,9 +179,12 @@ export default function HomePage() {
                         <div className="industry-card">
                             <div className="industry-icon">
                                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <rect x="8" y="20" width="32" height="16" rx="4" />
-                                    <circle cx="16" cy="40" r="4" />
-                                    <circle cx="32" cy="40" r="4" />
+                                    {/* Car Icon for Automotive */}
+                                    <path d="M8 28l4-8h24l4 8v8H8v-8z" />
+                                    <circle cx="16" cy="36" r="3" />
+                                    <circle cx="32" cy="36" r="3" />
+                                    <line x1="16" y1="20" x2="18" y2="20" />
+                                    <line x1="30" y1="20" x2="32" y2="20" />
                                 </svg>
                             </div>
                             <h3>Automotive</h3>
@@ -179,8 +193,14 @@ export default function HomePage() {
                         <div className="industry-card">
                             <div className="industry-icon">
                                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <rect x="8" y="8" width="32" height="24" rx="2" />
-                                    <rect x="16" y="32" width="16" height="8" />
+                                    {/* Microchip Icon for High-Tech */}
+                                    <rect x="14" y="14" width="20" height="20" rx="2" />
+                                    <line x1="10" y1="18" x2="14" y2="18" />
+                                    <line x1="10" y1="24" x2="14" y2="24" />
+                                    <line x1="10" y1="30" x2="14" y2="30" />
+                                    <line x1="34" y1="18" x2="38" y2="18" />
+                                    <line x1="34" y1="24" x2="38" y2="24" />
+                                    <line x1="34" y1="30" x2="38" y2="30" />
                                 </svg>
                             </div>
                             <h3>High-Tech & Electronics</h3>
@@ -189,7 +209,11 @@ export default function HomePage() {
                         <div className="industry-card">
                             <div className="industry-icon">
                                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M12 40V8l12 8 12-8v32l-12-8-12 8z" />
+                                    {/* Shopping Bag Icon for Retail */}
+                                    <path d="M8 16h32l2 24H6l2-24z" />
+                                    <path d="M16 16v-4a8 8 0 0116 0v4" />
+                                    <line x1="16" y1="24" x2="16" y2="24" />
+                                    <line x1="32" y1="24" x2="32" y2="24" />
                                 </svg>
                             </div>
                             <h3>Retail & E-Commerce</h3>
@@ -198,7 +222,10 @@ export default function HomePage() {
                         <div className="industry-card">
                             <div className="industry-icon">
                                 <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M24 8v32M16 16l8-8 8 8M8 28h32" />
+                                    {/* Medical Cross Icon for Pharma */}
+                                    <path d="M24 8v32M12 20h24M12 28h24" />
+                                    <rect x="20" y="12" width="8" height="24" rx="1" />
+                                    <rect x="14" y="18" width="20" height="12" rx="1" />
                                 </svg>
                             </div>
                             <h3>Pharma & Healthcare</h3>
