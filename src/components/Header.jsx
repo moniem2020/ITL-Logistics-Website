@@ -31,7 +31,7 @@ export default function Header() {
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <nav className="nav container">
                 <Link href="/" className="nav-logo">
-                    <img src="/logo.png" alt="ITL Logistics Egypt" className="logo-img" />
+                    <img src="/itl-logo.png" alt="ITL Logistics Egypt" className="logo-img" />
                 </Link>
 
                 <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>

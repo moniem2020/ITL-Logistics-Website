@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="footer-grid">
                     <div className="footer-brand">
                         <Link href="/" className="footer-logo">
-                            <img src="/logo.png" alt="ITL Logistics Egypt" className="logo-img" />
+                            <img src="/itl-logo.png" alt="ITL Logistics Egypt" className="logo-img" />
                         </Link>
                         <p className="footer-tagline">
                             Your cargo. Anywhere, everywhere.
