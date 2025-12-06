@@ -2820,7 +2820,7 @@ input, textarea, select {
 /* ===== CUSTOMER LOGOS ===== */
 .customer-logo, .network-logo {
     padding: var(--spacing-6);
-    background: rgba(255, 255, 255, 0.05);
+    background: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-lg);
     display: flex;

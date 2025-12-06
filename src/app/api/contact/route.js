@@ -2,49 +2,49 @@ import nodemailer from 'nodemailer'
 import { NextResponse } from 'next/server'
 
 export async function POST(request) {
-    try {
-        const body = await request.json()
-        const { name, email, phone, company, service, message } = body
+  try {
+    const body = await request.json()
+    const { name, email, phone, company, service, message } = body
 
-        // Validate required fields
-        if (!name || !email || !message) {
-            return NextResponse.json(
-                { error: 'Name, email, and message are required' },
-                { status: 400 }
-            )
-        }
+    // Validate required fields
+    if (!name || !email || !message) {
+      return NextResponse.json(
+        { error: 'Name, email, and message are required' },
+        { status: 400 }
+      )
+    }
 
-        // Check if email credentials are configured
-        const emailUser = process.env.EMAIL_USER
-        const emailPass = process.env.EMAIL_APP_PASSWORD
-        const recipientEmail = process.env.RECIPIENT_EMAIL || 'info@itlogistic.net'
+    // Check if email credentials are configured
+    const emailUser = process.env.EMAIL_USER
+    const emailPass = process.env.EMAIL_APP_PASSWORD
+    const recipientEmail = process.env.RECIPIENT_EMAIL || 'sales@itlogistic.net'
 
-        if (!emailUser || !emailPass) {
-            console.log('Email not configured - logging contact form submission:')
-            console.log({ name, email, phone, company, service, message })
+    if (!emailUser || !emailPass) {
+      console.log('Email not configured - logging contact form submission:')
+      console.log({ name, email, phone, company, service, message })
 
-            return NextResponse.json({
-                success: true,
-                message: 'Contact form received (email not configured)',
-                data: { name, email }
-            })
-        }
+      return NextResponse.json({
+        success: true,
+        message: 'Contact form received (email not configured)',
+        data: { name, email }
+      })
+    }
 
-        // Create transporter
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: emailUser,
-                pass: emailPass,
-            },
-        })
+    // Create transporter
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: emailUser,
+        pass: emailPass,
+      },
+    })
 
-        // Email content
-        const mailOptions = {
-            from: emailUser,
-            to: recipientEmail,
-            subject: `New Contact Form Submission from ${name}`,
-            html: `
+    // Email content
+    const mailOptions = {
+      from: emailUser,
+      to: recipientEmail,
+      subject: `New Contact Form Submission from ${name}`,
+      html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #0a1628; color: white; padding: 20px; text-align: center;">
             <h1 style="margin: 0;">ITL Logistics Egypt</h1>
@@ -94,20 +94,20 @@ export async function POST(request) {
           </div>
         </div>
       `,
-        }
-
-        await transporter.sendMail(mailOptions)
-
-        return NextResponse.json({
-            success: true,
-            message: 'Email sent successfully',
-        })
-
-    } catch (error) {
-        console.error('Contact form error:', error)
-        return NextResponse.json(
-            { error: 'Failed to send email', details: error.message },
-            { status: 500 }
-        )
     }
+
+    await transporter.sendMail(mailOptions)
+
+    return NextResponse.json({
+      success: true,
+      message: 'Email sent successfully',
+    })
+
+  } catch (error) {
+    console.error('Contact form error:', error)
+    return NextResponse.json(
+      { error: 'Failed to send email', details: error.message },
+      { status: 500 }
+    )
+  }
 }

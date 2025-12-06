@@ -2,61 +2,61 @@ import nodemailer from 'nodemailer'
 import { NextResponse } from 'next/server'
 
 export async function POST(request) {
-    try {
-        const body = await request.json()
-        const {
-            name,
-            email,
-            phone,
-            company,
-            cargoType,
-            weight,
-            origin,
-            destination,
-            serviceType,
-            urgency,
-            additionalInfo
-        } = body
+  try {
+    const body = await request.json()
+    const {
+      name,
+      email,
+      phone,
+      company,
+      cargoType,
+      weight,
+      origin,
+      destination,
+      serviceType,
+      urgency,
+      additionalInfo
+    } = body
 
-        // Validate required fields
-        if (!name || !email || !origin || !destination) {
-            return NextResponse.json(
-                { error: 'Name, email, origin, and destination are required' },
-                { status: 400 }
-            )
-        }
+    // Validate required fields
+    if (!name || !email || !origin || !destination) {
+      return NextResponse.json(
+        { error: 'Name, email, origin, and destination are required' },
+        { status: 400 }
+      )
+    }
 
-        // Check if email credentials are configured
-        const emailUser = process.env.EMAIL_USER
-        const emailPass = process.env.EMAIL_APP_PASSWORD
-        const recipientEmail = process.env.RECIPIENT_EMAIL || 'info@itlogistic.net'
+    // Check if email credentials are configured
+    const emailUser = process.env.EMAIL_USER
+    const emailPass = process.env.EMAIL_APP_PASSWORD
+    const recipientEmail = process.env.RECIPIENT_EMAIL || 'sales@itlogistic.net'
 
-        if (!emailUser || !emailPass) {
-            console.log('Email not configured - logging quote request:')
-            console.log(body)
+    if (!emailUser || !emailPass) {
+      console.log('Email not configured - logging quote request:')
+      console.log(body)
 
-            return NextResponse.json({
-                success: true,
-                message: 'Quote request received (email not configured)',
-                data: { name, email }
-            })
-        }
+      return NextResponse.json({
+        success: true,
+        message: 'Quote request received (email not configured)',
+        data: { name, email }
+      })
+    }
 
-        // Create transporter
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: emailUser,
-                pass: emailPass,
-            },
-        })
+    // Create transporter
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: emailUser,
+        pass: emailPass,
+      },
+    })
 
-        // Email content
-        const mailOptions = {
-            from: emailUser,
-            to: recipientEmail,
-            subject: `🚚 New Quote Request from ${name} - ${origin} to ${destination}`,
-            html: `
+    // Email content
+    const mailOptions = {
+      from: emailUser,
+      to: recipientEmail,
+      subject: `🚚 New Quote Request from ${name} - ${origin} to ${destination}`,
+      html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%); color: white; padding: 25px; text-align: center;">
             <h1 style="margin: 0; font-size: 24px;">ITL Logistics Egypt</h1>
@@ -146,20 +146,20 @@ export async function POST(request) {
           </div>
         </div>
       `,
-        }
-
-        await transporter.sendMail(mailOptions)
-
-        return NextResponse.json({
-            success: true,
-            message: 'Quote request sent successfully',
-        })
-
-    } catch (error) {
-        console.error('Quote request error:', error)
-        return NextResponse.json(
-            { error: 'Failed to send quote request', details: error.message },
-            { status: 500 }
-        )
     }
+
+    await transporter.sendMail(mailOptions)
+
+    return NextResponse.json({
+      success: true,
+      message: 'Quote request sent successfully',
+    })
+
+  } catch (error) {
+    console.error('Quote request error:', error)
+    return NextResponse.json(
+      { error: 'Failed to send quote request', details: error.message },
+      { status: 500 }
+    )
+  }
 }

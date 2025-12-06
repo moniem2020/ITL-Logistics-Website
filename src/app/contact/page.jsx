@@ -234,7 +234,7 @@ export default function ContactPage() {
                             <p>Get a competitive rate for your shipment in minutes.</p>
                         </div>
                         <div className="quick-quote-actions">
-                            <a href="mailto:info@itlogistic.net" className="btn btn-light btn-lg">
+                            <a href="mailto:sales@itlogistic.net" className="btn btn-light btn-lg">
                                 Email for Quote
                             </a>
                             <a href="tel:+201234567890" className="btn btn-outline-light btn-lg">
