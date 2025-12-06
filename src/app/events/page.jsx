@@ -291,7 +291,7 @@ export default function EventsPage() {
 
                     <div className="gallery-grid">
                         <div className="gallery-item">
-                            <img src="/gulfood.png" alt="Gulfood Dubai Exhibition" />
+                            <img src="/events/Gulfood 2023 Dubai Exhibition.webp" alt="Gulfood Dubai Exhibition" />
                             <div className="gallery-overlay">
                                 <h4>Gulfood Dubai</h4>
                                 <p>World's largest food & beverage trade show</p>
@@ -299,42 +299,42 @@ export default function EventsPage() {
                         </div>
 
                         <div className="gallery-item">
-                            <img src="/arab-health.png" alt="Arab Health Exhibition" />
+                            <img src="/events/Exhibition Transport Logistic Munich 2023.webp" alt="Transport Logistic Munich 2023" />
                             <div className="gallery-overlay">
-                                <h4>Arab Health</h4>
-                                <p>Leading healthcare exhibition</p>
+                                <h4>Transport Logistic Munich</h4>
+                                <p>International logistics exhibition</p>
                             </div>
                         </div>
 
                         <div className="gallery-item">
-                            <img src="/beauty-eurasia.png" alt="Beauty Eurasia Exhibition" />
+                            <img src="/events/Transport Logistics in Munich.webp" alt="Transport Logistics Munich" />
                             <div className="gallery-overlay">
-                                <h4>Beauty Eurasia</h4>
-                                <p>Turkey's largest beauty trade fair</p>
+                                <h4>Transport Logistics</h4>
+                                <p>Munich logistics event</p>
                             </div>
                         </div>
 
                         <div className="gallery-item">
-                            <img src="/warehouse.png" alt="Modern Logistics Warehouse" />
+                            <img src="/events/qt=q_30.webpBeauty West Africa Cosmetics in Nigeria - 2023.webp" alt="Beauty West Africa 2023" />
                             <div className="gallery-overlay">
-                                <h4>Warehouse Operations</h4>
-                                <p>State-of-the-art storage facilities</p>
+                                <h4>Beauty West Africa</h4>
+                                <p>Nigeria's largest beauty exhibition</p>
                             </div>
                         </div>
 
                         <div className="gallery-item">
-                            <img src="/cargo-ship.png" alt="Ocean Freight Shipping" />
+                            <img src="/logistics/rs=w_1160,h_870.webp" alt="Logistics Operations" />
                             <div className="gallery-overlay">
-                                <h4>Ocean Freight</h4>
-                                <p>International cargo shipping</p>
+                                <h4>Logistics Operations</h4>
+                                <p>Professional freight handling</p>
                             </div>
                         </div>
 
                         <div className="gallery-item">
-                            <img src="/air-freight.png" alt="Air Freight Cargo" />
+                            <img src="/logistics/download (1).webp" alt="Cargo Handling" />
                             <div className="gallery-overlay">
-                                <h4>Air Freight</h4>
-                                <p>Express cargo solutions</p>
+                                <h4>Cargo Handling</h4>
+                                <p>Efficient cargo management</p>
                             </div>
                         </div>
                     </div>
