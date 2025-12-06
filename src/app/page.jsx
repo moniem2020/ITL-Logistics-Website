@@ -235,6 +235,81 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Our Customers */}
+            <section className="customers-section">
+                <div className="container">
+                    <div className="section-header center">
+                        <span className="section-tag">Our Customers</span>
+                        <h2 className="section-title">Trusted by Leading Brands</h2>
+                    </div>
+                    <div className="customer-industries">
+                        <div className="customer-logo">
+                            <img src="/customers/Fresh.webp" alt="Fresh" />
+                        </div>
+                        <div className="customer-logo">
+                            <img src="/customers/Kandil.png" alt="Kandil" />
+                        </div>
+                        <div className="customer-logo">
+                            <img src="/customers/SASCO Brands.png" alt="SASCO Brands" />
+                        </div>
+                        <div className="customer-logo">
+                            <img src="/customers/Tanta Motors.png" alt="Tanta Motors" />
+                        </div>
+                        <div className="customer-logo">
+                            <img src="/customers/ITACO.png" alt="ITACO" />
+                        </div>
+                        <div className="customer-logo">
+                            <img src="/customers/Ezz Elarab.png" alt="Ezz Elarab" />
+                        </div>
+                        <div className="customer-logo">
+                            <img src="/customers/Elhelow Style.png" alt="Elhelow Style" />
+                        </div>
+                        <div className="customer-logo">
+                            <img src="/customers/Al Amal for non-woven.png" alt="Al Amal" />
+                        </div>
+                        <div className="customer-logo">
+                            <img src="/customers/Tredco El Sayad.webp" alt="Tredco El Sayad" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Our Networks */}
+            <section className="networks-section">
+                <div className="container">
+                    <div className="section-header center">
+                        <span className="section-tag">Our Global Network</span>
+                        <h2 className="section-title">Worldwide Partnerships</h2>
+                        <p className="section-subtitle">
+                            Member of leading freight forwarding networks ensuring global reach and reliability
+                        </p>
+                    </div>
+                    <div className="network-regions">
+                        <div className="network-logo">
+                            <img src="/networks/GLA Global Logistics Alliance.webp" alt="GLA Global Logistics Alliance" />
+                        </div>
+                        <div className="network-logo">
+                            <img src="/networks/AO Partners, global freight forwarding network.jpg" alt="AO Partners" />
+                        </div>
+                        <div className="network-logo">
+                            <img src="/networks/C5C, connecting 5 continents network logo.png" alt="C5C Network" />
+                        </div>
+                        <div className="network-logo">
+                            <img src="/networks/EIFFA-logo.png" alt="EIFFA" />
+                        </div>
+                        <div className="network-logo">
+                            <img src="/networks/iata-logo-parceiro-travelcare.png" alt="IATA" />
+                        </div>
+                        <div className="network-logo">
+                            <img src="/networks/Fédération_Internationale_des_Associations_de_Transitaires_et_Assimilés_(logo).svg.png" alt="FIATA" />
+                        </div>
+                        <div className="network-logo">
+                            <img src="/networks/rs=w_512,h_191,cg_true.webp" alt="Network Partner" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
             <section className="cta">
                 <div className="container">

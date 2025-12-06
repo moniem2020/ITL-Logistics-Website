@@ -2816,3 +2816,38 @@ input, textarea, select {
 .exhibition-header {
     padding-top: var(--spacing-6);
 }
+
+/* ===== CUSTOMER LOGOS ===== */
+.customer-logo, .network-logo {
+    padding: var(--spacing-6);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+    height: 120px;
+}
+
+.customer-logo:hover, .network-logo:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(220, 38, 38, 0.3);
+    transform: translateY(-4px);
+}
+
+.customer-logo img, .network-logo img {
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0) invert(1);
+    opacity: 0.7;
+    transition: all var(--transition-base);
+}
+
+.customer-logo:hover img, .network-logo:hover img {
+    filter: none;
+    opacity: 1;
+}
